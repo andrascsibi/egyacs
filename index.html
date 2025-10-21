@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egy Ács</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-image: url('header.jpeg');
+            background-size: cover;
+            background-position: center 46%;
+            height: 300px;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #7a5523, #cb732b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .left-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .left-column img.logo {
+            max-width: 200px; /* Adjust logo size */
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .left-column h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        .left-column p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .right-column {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .services-section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .services-section h3 {
+            width: 100%;  
+            font-size: 1.8em;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+        .service-panel {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+        .service-panel img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* Crop to fit while maintaining aspect ratio */
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .service-panel h4 {
+            font-size: 1.4em;
+            margin: 10px 0;
+        }
+        .service-panel p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        .process-section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .process-left {
+            flex: 1;
+            min-width: 300px;
+        }
+        .process-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .process-right {
+            flex: 1;
+            min-width: 300px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .process-right h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .process-step .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #cb732b;
+            color: white;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .process-step .content {
+            flex: 1;
+        }
+        .process-step h4 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        .process-step p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #cb732b;
+            color: white;
+            margin-top: 20px;
+        }
+        a {
+            color: #7a5523;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kézműves kültéri építmények</h1>
+    </header>
+    
+    <section class="main-content">
+        <div class="left-column">
+            <img src="egyacs.png" alt="Egy Ács Logo" class="logo">
+            <h2>Tegye hasznossá tereit <br> <span class="gradient-text">Egy Ács</span> segítségével</h2> <!-- Replace with actual name -->
+            <p>Kültéri építmények kivitelezését vállaljuk Budán és környékén.</p>
+            <p>Csibi András vagyok, egy ács. Elhagytam a villamosmérnöki pályát, hogy hasznos tereket hozzak létre az embereknek. Munkatársaimmal legszívesebben látszó szerkezeteket építünk, melyek nem csak tartósak, de szépek is.</p>
+
+            <div class="contact-details">
+                <p>Telefon: <a href="tel:+36305035280">+36 (30) 5035280</a></p>
+                <p>Email: <a href="mailto:egyacs@proton.me">egyacs@proton.me</a></p>
+                <p>TikTok: <a href="https://www.tiktok.com/@egyacs" target="_blank">tiktok.com/@egyacs</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/egyacs" target="_blank">facebook.com/egyacs</a></p>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2>Kérjen árajánlatot a projektjére most! ⬇️</h2>
+            <div id="inquiry-form">
+                <div data-tf-live="01K834VAZX1551Z8EF5WJGYPEG"></div><script src="https://embed.typeform.com/next/embed.js"></script> 
+            </div>
+        </div>
+    </section>
+    
+    <section class="services-section">
+        <h3>Hogyan építünk</h3>
+        <div class="service-panel">
+            <img src="bsh.jpg" alt="retegragasztott gerenda">
+            <h4>Rétegragasztott gerendák</h4>
+            <p>A műszárított és ragasztott gerendák remekül tartják az alakjukat, nem repednek, nem vetemednek.</p>
+        </div>
+        <div class="service-panel">
+            <img src="f70.jpg" alt="rothoblaas rejtett talp">
+            <h4>Rothoblaas kötőelemek</h4>
+            <p>A Rothoblaas csavarok hajlítószilárdsága és korrozióvédelme garantálja a tartós kivitelt.</p>
+        </div>
+        <div class="service-panel">
+            <img src="lazur.jpg" alt="lazurozas ecsettel">
+            <h4>Felületkezelés</h4>
+            <p>A fűrészárut csiszoljuk és ecsettel lazúrozzuk két rétegben, hogy ne csak szép legyen, hanem védjen is.</p>
+        </div>
+    </section>
+    <section class="process-section">
+        <div class="process-left">
+            <img src="korlat2.jpeg" alt="egy gyonyoru korlat reszlet">
+        </div>
+        <div class="process-right">
+            <h3>3 lépcsős folyamat</h3>
+            <div class="process-step">
+                <span class="circle">1</span>
+                <div class="content">
+                    <h4>Konzultáció és árajánlat</h4>
+                    <p>Videóhívásban vagy személyesen felkeressük az építési helyszínt, felmérjük az igényeit, és részletes ajánlatot adunk.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <span class="circle">2</span>
+                <div class="content">
+                    <h4>Tervezés és építés</h4>
+                    <p>Amint a részleteket véglegesítettük, munkához látunk. Kiváló minőségű anyagokból, precíz szakértelemmel építjük meg elképzelését. A folyamatról rendszeresen tájékoztatjuk.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <span class="circle">3</span>
+                <div class="content">
+                    <h4>Utánkövetés és garancia</h4>
+                    <p>Amint elkészültünk a munkával, közösen körbejárjuk, hogy minden megfeleljen az elvárásainak. A munka típusától függő garanciát adunk az építményeinkre, de legalább 10 évet.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <footer>
+        <p>&copy; 2025 Egy Ács. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>
+
