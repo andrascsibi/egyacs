@@ -170,6 +170,49 @@
             line-height: 1.5;
             margin: 0;
         }
+
+        .reviews-section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .reviews-section h3 {
+            width: 100%;
+            font-size: 2em;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+        .review-panel {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+        .review-panel .google-logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .review-panel .review-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        .review-panel .reviewer-name {
+            font-weight: bold;
+            font-size: 1em;
+        }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -256,6 +299,24 @@
             </div>
         </div>
     </section>    
+    <section class="reviews-section">
+        <h3>Elégedett ügyfeleink</h3>
+        <div class="review-panel">
+            <img src="googlereviews.png" alt="Google Reviews" class="google-logo">
+            <p class="review-text">"Andris a teraszunkon épített nekünk fából egy tetővel fedett részt, amely zsindely borítást kapott. Az árajánlatadás és az építmény megtervezése során nagyon részletesen tájékoztatott bennünket mindenről, tételesen láthattuk, mi mennyibe fog kerülni, alternatívákat vázolt fel. A tervezésben igyekezett a mi elképzeléseinket és a szakmai, biztonságossági és élettartamra vonatkozó szempontokat is a legmesszebb menőkig figyelembe venni. Andris mindig pontosan érkezett, feltakarított maga után és előre jelezte, ha valamiért nem tud jönni. Az elkészült "hencsergő" teljesen megfelel az elképzeléseinknek, precízen kivitelezett, stabil és esztétikus. Mindenkinek ajánlom Andrist, aki megbízható, munkájára igényes, jól kommunikáló áccsal szeretne dolgozni."</p>
+            <p class="reviewer-name">— Lovas Lilla</p>
+        </div>
+        <div class="review-panel">
+            <img src="googlereviews.png" alt="Google Reviews" class="google-logo">
+            <p class="review-text">"Megbízható, hozzáértő, alapos, rendelkezésre áll, nem drága és gyors. És még jófej is🙂 "</p>
+            <p class="reviewer-name">— Szekeres Gábor</p>
+        </div>
+        <div class="review-panel">
+            <img src="googlereviews.png" alt="Google Reviews" class="google-logo">
+            <p class="review-text">"András napozóteraszt épített nekünk, amit imádunk. Lelkiismeretes, intelligens és megbízható ács. Nagyon ajánlom!"</p>
+            <p class="reviewer-name">— Kele Sára</p>
+        </div>
+    </section>
     <footer>
         <p>&copy; 2025 Egy Ács. Minden jog fenntartva.</p>
     </footer>
